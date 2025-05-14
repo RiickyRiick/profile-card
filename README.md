@@ -34,7 +34,7 @@ Overall, the design was great, and I'm proud of the progress I've been making so
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://riickyriick.github.io/profile-card/
 
 ## My process
 
