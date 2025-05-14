@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-saturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 1%, 51%);
+}
+
+body {
+    background-color: var(--dark-cyan);
+    background-image: 
+    url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+    background-position: 
+    -880px -1100px,
+    590px 500px;
+    background-repeat: no-repeat;
+    background-size: 
+    100%,
+    100%;
+    font-family: 'kumbh sans', sans-serif;
+    font-size: 18px;
+  }
+
+  .container {
+    margin: 0 1em;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*Card Animation*/
+
+  .card-overview {
+    background-color: hsl(0, 0%, 100%);
+    width: 350px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: ;
+  }
+
+  @keyframes spin {
+    0% {transform: translateY(-820px) ;}
+    50% {transform: rotate(-360deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+  .img img {
+    width: 100%;
+  }
+
+
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+  }
+
+  /*Profile Image Animation*/
+  .profile-img img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid hsl(0, 0%, 100%);
+    animation: float 5s infinite 3s;
+  }
+
+  @keyframes float {
+
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-10px);}
+    100%{transform: translateY(0px);}
+  }
+  .profile-content .name {
+    font-weight: 700;
+  }
+
+  .age {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+  }
+
+  .city, .info {
+    color: var(--dark-gray);
+    font-weight: 400;
+  }
+
+  .city {
+    padding-top: 10px;
+
+  }
+
+  .social-stats {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid hsl(0, 6%, 84%);
+    padding: 20px;
+  }
+
+  .engagement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .engagement h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  .engagement p {
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+
+
+
+  .attribution {
+    color: hsl(234, 12%, 34%);
+    font-size: 11px;
+    width: 400px;
+    text-align: center;
+    p
+}
+
+.attribution img {
+    width: 14px;
+    margin: 0 5px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: blue;
+}
+
+.attribution a:hover {
+    color: hsl(212, 7%, 52%);
+}
